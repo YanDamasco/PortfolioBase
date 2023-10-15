@@ -8,11 +8,21 @@
     <script src="https://kit.fontawesome.com/690144bb0d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
+        <button class="btn_icon_header" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list burger_button" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
         <div class="header_logo">
             <h1>Lorem</h1>
         </div>
-        <div class="header_links">
+        <div class="header_links" id="navigation_header">
+            <button class="btn_icon_header" onclick="toggleSidebar()" id="btn_close_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+                  </svg>
+            </button>
             <a href="#home" class="header_item">Home</a>
             <a href="#about"
             class="header_item">About</a>
@@ -20,7 +30,7 @@
             <a href="#contact" class="header_item">Contact</a>
         </div>
     </header>
-    <main>
+    <main id="content">
         <section id="home">
             <div class="home_text">
                 <h1>CREATIVE DESIGN</h1>
@@ -73,15 +83,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam at culpa nostrum officia ea pariatur itaque atque architecto, necessitatibus.</p>
                 <img class="home_flower_2" src="/imagens/flower.png" alt="">
             </div>
-            <div class="contact_image" style="width: 20%;">
-                <img src="/imagens/char3.png" alt="second-character" style="width: 380px;">
+            <div class="contact_image">
+                <img src="/imagens/char3.png" alt="second-character">
             </div>
             <div class="contact_medias">
                 <img class="home_flower_3" src="/imagens/flower.png" alt="">
-                <button>Whatsapp <i class="fa-brands fa-whatsapp"></i></button>
-                <button>Github <i class="fa-brands fa-linkedin"></i></button>
-                <button>LinkedIn <i class="fa-brands fa-github"></i></button>
-                <button>Discord <i class="fa-brands fa-discord"></i></button>
+                <button class="contact_buttons">Whatsapp <i class="fa-brands fa-whatsapp"></i></button>
+                <button class="contact_buttons">Github <i class="fa-brands fa-linkedin"></i></button>
+                <button class="contact_buttons">LinkedIn <i class="fa-brands fa-github"></i></button>
+                <button class="contact_buttons">Discord <i class="fa-brands fa-discord"></i></button>
             </div>
         </section>
 
@@ -93,5 +103,6 @@
             <a href="https://vecteezy.com">vecteezy.com</a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
