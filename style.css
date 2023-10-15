@@ -457,6 +457,10 @@ footer {
         margin-right: 0;
     }
 
+    .project_2, .project_3 {
+        margin-top: 50px;
+    }
+
     .my_projects {
         display: flex;
         align-items: center;
